@@ -1,19 +1,31 @@
+<!DOCTYPE html>
+<html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <!-- ✅ Google Verification -->
   <meta name="google-site-verification" content="y19R9qXBVDOnSUt55UssB0AQXVPeXm0R9eC5uSNXID4" />
 
   <title>Gemini Style AI Chat</title>
-
   <style>
-    body { background:#0f0f10; color:#fff; font-family: Arial, sans-serif; }
-    #chat-box { width:92%; max-width:720px; height:420px; overflow:auto; border:1px solid #555; padding:10px; }
+    body { background:#0f0f10; color:#fff; font-family: Arial, sans-serif; padding:16px; text-align:center; }
+    #chat-box { width:92%; max-width:720px; height:420px; margin:14px auto; background:#151515; border-radius:10px; padding:12px; overflow:auto; border:1px solid #2a2a2a; }
     .msg-you{ text-align:left; color:#dfe; margin:6px 0; }
     .msg-ai{ text-align:left; color:#ffd; margin:6px 0; }
     #controls{ margin-top:12px; }
-    input#userInput{ width:70%; padding:10px; border-radius:6px; border:1px solid #888; }
-    button{ padding:10px 14px; border-radius:6px; border:none; background:#1e90ff; color:#fff; cursor:pointer; }
+    input#userInput{ width:70%; padding:10px; border-radius:6px; border:0; outline:0; }
+    button{ padding:10px 14px; border-radius:6px; border:0; background:#06b; color:#fff; margin-left:8px; }
   </style>
 </head>
+<body>
+  <h2> Gemini Style AI Chat</h2>
+  <div id="chat-box"></div>
+  <div id="controls">
+    <input id="userInput" placeholder="Apna sawal likho..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
