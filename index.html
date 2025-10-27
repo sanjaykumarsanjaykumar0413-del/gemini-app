@@ -101,31 +101,7 @@
       const msg = input.value.trim();
       if (msg === "") return;
       addMessage(msg, "user");
-      input.value = "";
-
-      // 👉 AI का जवाब तुरंत आएगा
-      const reply = generateAIReply(msg);
-      addMessage(reply, "ai");
-    }
-
-    function generateAIReply(input) {
-      const text = input.toLowerCase();
-      if (text.includes("hello") || text.includes("hi"))
-        return "👋 नमस्ते! मैं Gemini Style AI हूँ, आपकी मदद के लिए यहाँ हूँ।";
-      if (text.includes("name"))
-        return "मेरा नाम <b>Gemini Style AI Chat</b> है 🔮";
-      if (text.includes("time"))
-        return "⏰ अभी समय है: " + new Date().toLocaleTimeString();
-      if (text.includes("who"))
-        return "मैं एक AI चैटबॉट हूँ जो आपकी queries के जवाब देता हूँ 💫";
-      if (text.includes("kaise") || text.includes("how are you"))
-        return "मैं बिल्कुल बढ़िया हूँ 😊, आप कैसे हैं?";
-      return "🤖 आपने कहा: <b>" + input + "</b><br>यह रहा मेरा जवाब: <i>" + input.split('').reverse().join('') + "</i>";
-    }
-
-    input.addEventListener("keypress", (e) => {
-      if (e.key === "Enter") sendMessage();
-    });
-  </script>
+      input.value = ""; </script>
 </body>
   </html>
+
